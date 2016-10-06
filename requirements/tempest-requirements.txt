@@ -1,0 +1,1 @@
+git+https://github.com/redhat-openstack/ansible-role-tripleo-tempest.git#egg=ansible-role-tripleo-tempest
