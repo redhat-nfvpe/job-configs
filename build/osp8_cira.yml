@@ -1,6 +1,6 @@
 artib_base_os: rhel7
 artib_build_system: delorean
-artib_minimal_base_image_url: file:///opt/rhel-guest-image-7.2.qcow2
+artib_minimal_base_image_url: file:///opt/rhel_guest_images/rhel-guest-image-7.2.qcow2
 artib_release: liberty
 artib_repo_script: "{{ jenkins_workspace }}/config/scripts/repo_setup_rhel_osp8.j2"
 artib_undercloud_convert_script:  "{{ jenkins_workspace }}/config/scripts/undercloud_convert_rhel_osp.j2"
