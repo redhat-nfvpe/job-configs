@@ -4,4 +4,3 @@ undercloud_image_url: file:///home/stack/images/osp8/undercloud.qcow2
 overcloud_image_url: file:///home/stack/images/osp8/overcloud-full.tar
 ipa_image_url: file:///home/stack/images/osp8/ironic-python-agent.tar
 undercloud_install_script: "{{ jenkins_workspace }}/config/scripts/undercloud-install_osp8.sh.j2"
-undercloud_customize_script: "{{ jenkins_workspace}}/config/scripts/undercloud-customize-script.sh.j2"
