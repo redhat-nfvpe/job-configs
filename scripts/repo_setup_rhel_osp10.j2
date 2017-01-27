@@ -20,11 +20,5 @@ for repo in $(echo $REG_REPOS | tr ',' '\n'); do
 done
 subscription-manager repos $repos
 
-
-# install epel release
-sudo yum -y install wget
-wget https://dl.fedoraproject.org/pub/epel/epel-release-latest-7.noarch.rpm -O /tmp/epel-release-latest-7.noarch.rpm
-sudo yum localinstall -y /tmp/epel-release-latest-7.noarch.rpm
-
 # update to get all packages available
 sudo yum update -y
