@@ -6,4 +6,4 @@ artib_repo_script: "{{ jenkins_workspace }}/config/scripts/repo_setup_rhel_osp10
 artib_working_dir: "{{ jenkins_workspace }}/oooq-images"
 publish: false
 undercloud_image_url: "file:///{{ jenkins_workspace }}/oooq-images/undercloud.qcow2"
-
+repo_remote_location: "{{ repo_remote_location }}"

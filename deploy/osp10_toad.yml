@@ -3,4 +3,4 @@ osp_release: rhos-10
 undercloud_image_url: file:///home/stack/images/osp10/undercloud.qcow2
 overcloud_image_url: file:///home/stack/images/osp10/overcloud-full.tar
 ipa_image_url: file:///home/stack/images/osp10/ironic-python-agent.tar
-
+repo_remote_location: "{{ repo_remote_location }}"
