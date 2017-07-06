@@ -10,6 +10,8 @@ subscription-manager register --username {{ rhel_reg_user }} --password {{ rhel_
 # attach the desired pool id
 subscription-manager attach --pool={{ rhel_reg_pool_id }}
 
+subscription-manager repos --disable=*
+
 repos="repos --enable rhel-7-server-rpms"
 for repo in $(echo $REG_REPOS | tr ',' '\n'); do
     repos="$repos --enable $repo"

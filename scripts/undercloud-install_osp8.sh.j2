@@ -18,7 +18,7 @@ sudo subscription-manager register --username {{ rhel_reg_user }} --password {{ 
 sudo subscription-manager attach --pool="{{ rhel_reg_pool_id }}"
 
 # disable all repos by default
-sudo yum-config-manager --disable \*
+subscription-manager repos --disable=*
 
 repos="repos "
 for repo in $(echo $REG_REPOS | tr ',' '\n'); do
