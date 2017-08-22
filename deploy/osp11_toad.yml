@@ -1,0 +1,6 @@
+release: ocata
+osp_release: rhos-11
+undercloud_image_url: file:///home/stack/images/osp11/undercloud.qcow2
+overcloud_image_url: file:///home/stack/images/osp11/overcloud-full.tar
+ipa_image_url: file:///home/stack/images/osp11/ironic-python-agent.tar
+repo_remote_location: "ftp://{{ jenkins_slave_address }}/pub/osp_repo/osp.repo"
