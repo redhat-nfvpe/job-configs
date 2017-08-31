@@ -1,0 +1,6 @@
+release: pike
+osp_release: rhos-12
+undercloud_image_url: file:///home/stack/images/osp12/undercloud.qcow2
+overcloud_image_url: file:///home/stack/images/osp12/overcloud-full.tar
+ipa_image_url: file:///home/stack/images/osp12/ironic-python-agent.tar
+repo_remote_location: "ftp://{{ jenkins_slave_address }}/pub/osp_repo/osp.repo"

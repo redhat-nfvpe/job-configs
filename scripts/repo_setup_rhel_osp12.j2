@@ -1,0 +1,9 @@
+#!/bin/bash
+# Repo script to setup rhel-7 with osp12
+
+set -eux
+
+sudo curl {{repo_remote_location}} -o /etc/yum.repos.d/osp.repo
+
+# update to get all packages available
+sudo yum update -y
